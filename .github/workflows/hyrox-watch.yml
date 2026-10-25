@@ -1,8 +1,7 @@
 name: HYROX Bengaluru ticket watch
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+  # Triggered externally by cron-job.org via the workflow_dispatch API.
   workflow_dispatch:
     inputs:
       test_email:
